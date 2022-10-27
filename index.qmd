@@ -543,7 +543,7 @@ Authors should be able to:\
 
 2.  Time travel to different versions (with output!)
 
-3.  Stash bits of code out of sight (with utilidoors!)
+3.  Stash bits of code out of sight (with utilidors!)
 
 4.  Annotate easily what to look at and what not to look at 🚥
 :::
