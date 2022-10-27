@@ -1,0 +1,226 @@
+[
+  {
+    "objectID": "index.html#alison-hill",
+    "href": "index.html#alison-hill",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Alison Hill",
+    "text": "Alison Hill\n\nDirector of Knowledge\nVoltron Data\n @apreshill\n @apreshill\n apreshill.com"
+  },
+  {
+    "objectID": "index.html#once-upon-a-time",
+    "href": "index.html#once-upon-a-time",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Once upon a time…",
+    "text": "Once upon a time…\n\n\nThere was a human named Joel Grus (@joelgrus), who did not like notebooks.\n\n\n\n\n\n\n\n\n\n\n\n📹 https://www.youtube.com/watch?v=7jiPeIFXb6U"
+  },
+  {
+    "objectID": "index.html#select-complaints",
+    "href": "index.html#select-complaints",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Select complaints",
+    "text": "Select complaints\n\n\n\nHidden state and out-of-order execution\nNotebooks are difficult for beginners\nNotebooks encourage bad habits\nNotebooks discourage modularity and testing\nJupyter’s autocomplete, linting, and way of looking up the help are awkward\n\n\n\nNotebooks encourage bad processes\nNotebooks hinder reproducible + extensible science\nNotebooks make it hard to copy and paste into Slack/Github issues\nErrors will always halt execution\nNotebooks make it easy to teach poorly\nNotebooks make it hard to teach well\n\n\n\n\n\n🔗 https://yihui.org/en/2018/09/notebook-war/"
+  },
+  {
+    "objectID": "index.html#in-a-land-far-far-away",
+    "href": "index.html#in-a-land-far-far-away",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "In a land far far away…",
+    "text": "In a land far far away…\n\n\nThere was another human named Jeremy Howard (@jeremyphoward), who actually did like notebooks.\n\n\n\n\n\n\n\n\n\n\n\n📹 https://www.youtube.com/watch?v=9Q6sLbz37gk"
+  },
+  {
+    "objectID": "index.html#meanwhile",
+    "href": "index.html#meanwhile",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Meanwhile 🍿…",
+    "text": "Meanwhile 🍿…\n\n\nA fair post-ac data scientist turned product manager was knitting notebooks to her heart’s desire\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIllustration by Desirée De Leon"
+  },
+  {
+    "objectID": "index.html#the-problem",
+    "href": "index.html#the-problem",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "The problem",
+    "text": "The problem\nWe are still just talking about tools and features.\nAnd…we are still (mainly) talking with engineers."
+  },
+  {
+    "objectID": "index.html#imagineers",
+    "href": "index.html#imagineers",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Imagineers",
+    "text": "Imagineers\nA creative team of artists and engineers who design the theme parks\n\n\n\n\n\n“We keep moving forward, opening up new doors and doing new things, because we’re curious. And curiosity keeps leading us down new paths. We’re always exploring and experimenting. We call Imagineering the blending of creative imagination with technical know-how.”\n— Walt Disney\n\n\n\n\nPhoto © Disney"
+  },
+  {
+    "objectID": "index.html#what-is-a-notebook",
+    "href": "index.html#what-is-a-notebook",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "What is a notebook?",
+    "text": "What is a notebook?\n\n\nMike Bostock:\n\n\n“an interactive, editable document defined by code. It’s a computer program, but one that’s designed to be easier to read and write by humans.”\n\n\nMartin Fowler:\n\n\n“A computational notebook is an environment for writing a prose document that allows the author to embed code which can be easily executed with the results also incorporated into the document.”"
+  },
+  {
+    "objectID": "index.html#one-kind-of-notebook",
+    "href": "index.html#one-kind-of-notebook",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "One kind of notebook",
+    "text": "One kind of notebook\n---\ntitle: \"ggplot2 demo\"\nauthor: \"Norah Jones\"\ndate: \"5/22/2021\"\nformat: \n  html:\n    fig-width: 8\n    fig-height: 4\n    code-fold: true\n---\n\n## Air Quality\n\n@fig-airquality further explores the impact of temperature on ozone level.\n\n```{r}\n#| label: fig-airquality\n#| fig-cap: Temperature and ozone level.\n#| warning: false\nlibrary(ggplot2)\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\"\n)\n```"
+  },
+  {
+    "objectID": "index.html#why-make-a-notebook",
+    "href": "index.html#why-make-a-notebook",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Why make a notebook?",
+    "text": "Why make a notebook?\n\nFor communicating to decision makers, who want to focus on the conclusions, not the code behind the analysis.\nFor collaborating with other data scientists (including future you!), who are interested in both your conclusions, and how you reached them (i.e. the code).\nAs an environment in which to do data science, as a modern day lab notebook where you can capture not only what you did, but also what you were thinking.\n\n\n\n🔗 https://r4ds.hadley.nz/quarto.html"
+  },
+  {
+    "objectID": "index.html#making-of-a-notebook",
+    "href": "index.html#making-of-a-notebook",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Making of a notebook",
+    "text": "Making of a notebook\n\n\n\n\n\n\n\n\n\nAuthoring framework: how you write code + text (Jupyter, Quarto, Observable)\nLanguage engine & markdown flavor: what you write\nFile format: what you save\nLocal editor: where you write locally 💻 (source + UI)\nPlatform editor: where the magic happens ☁️ (sharing + UI)"
+  },
+  {
+    "objectID": "index.html#a-notebook-by-any-other-name",
+    "href": "index.html#a-notebook-by-any-other-name",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "A notebook by any other name…",
+    "text": "A notebook by any other name…\n\n\n\nJupyter notebooks are notebooks. Jupyter is the product.\nObservable notebooks are notebooks. Observable is the product.\nQuarto and R Markdown notebooks are plain text documents. Two modes:\n\nNotebook mode\nBatch mode"
+  },
+  {
+    "objectID": "index.html#four-key-principles",
+    "href": "index.html#four-key-principles",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Four key principles",
+    "text": "Four key principles\n\nSuspended reality\n\n\n\nMultisensory experience\n\n\n\n\nDetails matter\n\n\n\n\nMake it shareable\n\n\n\n\n🧵 twitter thread"
+  },
+  {
+    "objectID": "index.html#section-6",
+    "href": "index.html#section-6",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "",
+    "text": "Principle #1\n\n\nSuspended reality"
+  },
+  {
+    "objectID": "index.html#principle-1-suspended-reality",
+    "href": "index.html#principle-1-suspended-reality",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Principle #1: Suspended reality",
+    "text": "Principle #1: Suspended reality\n\n\nProblem: Walt Disney found it jarring to see characters out of place. It breaks the suspension of reality.\nSolution: Disney built the utilidor system — a system of some of the world’s largest utility tunnels\nAn intricate web of tunnels lies underneath the park, enabling characters to navigate to their respective “worlds” without ever appearing out of world or duplicative."
+  },
+  {
+    "objectID": "index.html#notebook-utilidors",
+    "href": "index.html#notebook-utilidors",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Notebook utilidors",
+    "text": "Notebook utilidors\n\n\nLess magic, more plain text logic\n\nConfiguration settings - often YAML in the document header or an external file - preferably define own variables\nOutsource a script or document\nReuse code chunks in different places\nConditional evaluation of code\n\n\n\n\n\n\n\nAn example\n\n\n\n\nStill from Fantasia (1940), © Walt Disney / Courtesy Everett Collection"
+  },
+  {
+    "objectID": "index.html#section-7",
+    "href": "index.html#section-7",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "",
+    "text": "Principle #2\n\n\nMultisensory experience"
+  },
+  {
+    "objectID": "index.html#principle-2-multisensory-experience",
+    "href": "index.html#principle-2-multisensory-experience",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Principle #2: Multisensory experience",
+    "text": "Principle #2: Multisensory experience\n\n\nProblem: Being at Disney World needs to be an immersive, memorable experience.\nSolution: Disney built the smellitizer system — a system that blows air across scented substances to make the air smell a certain (ideally good) way."
+  },
+  {
+    "objectID": "index.html#notebook-smells",
+    "href": "index.html#notebook-smells",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Notebook smells",
+    "text": "Notebook smells\n\n\nHave you ever seen a notebook with…\n\nNo meaningful headings (or worse, cute or peppy ones)\nNo meaningful heading hierarchy\nNo navigation\nNo description of the data\nNo logical order"
+  },
+  {
+    "objectID": "index.html#notebooks-do-have-a-scent",
+    "href": "index.html#notebooks-do-have-a-scent",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Notebooks do have a scent",
+    "text": "Notebooks do have a scent\n\n\n“Information foraging explains how users behave on the web and why they click certain links and not others.\n\nInformation scent can be used to analyze how people assess a link and the page context surrounding the link to judge what’s on the other end of the link.”\n\n\n\n\n\n\nhttps://www.nngroup.com/articles/information-scent/"
+  },
+  {
+    "objectID": "index.html#smells-like-a-good-notebook",
+    "href": "index.html#smells-like-a-good-notebook",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Smells like a good notebook 🥞",
+    "text": "Smells like a good notebook 🥞\n\n\n\nAdd a clickable table of contents 📌\nAdd useful headings\n\nAim for H2 and H3 levels only\nUse sentence case\n\nLimit to five or six H2 sections max if you can\nHave a topic sentence\nDescribe your data (5w+1H)\nLay things out in a logical order\n\nBeginning > middle > end\nLogical != chronological"
+  },
+  {
+    "objectID": "index.html#section-8",
+    "href": "index.html#section-8",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "",
+    "text": "Principle #3\n\n\nDetails matter"
+  },
+  {
+    "objectID": "index.html#principle-3-details-matter",
+    "href": "index.html#principle-3-details-matter",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Principle #3: Details matter",
+    "text": "Principle #3: Details matter\n\n\nProblem: When a single detail is wrong, you lose the experience and the magic.\nSolution: Reduce the chances of losing the magic.\nExamples:\n\n1. You cannot buy gum\n2. Official no-fly zone\n3. Always within 30 steps of a trash can"
+  },
+  {
+    "objectID": "index.html#easy-things-should-be-easy",
+    "href": "index.html#easy-things-should-be-easy",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Easy things should be easy",
+    "text": "Easy things should be easy\n\n\n\nEasy styling\n\nAuthors want fonts & colors!\nReaders want fonts & colors!\n\nEasy layouts\n\nBasic grid with rows/columns\n\nEasy show/hide code and results in output\nEasy “run from the top” mode\nEasy way to skip or freeze a code chunk"
+  },
+  {
+    "objectID": "index.html#hard-things-should-be-possible",
+    "href": "index.html#hard-things-should-be-possible",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Hard things should be possible",
+    "text": "Hard things should be possible\n\n\n\nVersion control\nExport/download source file\nSave all plots as image files\nExtract all of my code into a script\nReproducible environments"
+  },
+  {
+    "objectID": "index.html#section-9",
+    "href": "index.html#section-9",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "",
+    "text": "Principle #4\n\n\nMake it shareable"
+  },
+  {
+    "objectID": "index.html#principle-4-make-it-shareable",
+    "href": "index.html#principle-4-make-it-shareable",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Principle #4: Make it shareable",
+    "text": "Principle #4: Make it shareable\n\n\n\n\nProblem: Making something shareable makes it more memorable.\nSolution: Make it easier to share.\nExamples:\n“The concrete—a brainchild of Disney and Kodak—creates more vivid photographs…and also makes the green grass appear greener.”\n“[Cinderella’s] castle faces south, meaning the sun is never directly behind it. It’s (almost) impossible to take a bad photo of yourself in front of Cinderella’s Castle.”"
+  },
+  {
+    "objectID": "index.html#a-notebook-is-a-snapshot-in-time",
+    "href": "index.html#a-notebook-is-a-snapshot-in-time",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "A notebook is a snapshot in time",
+    "text": "A notebook is a snapshot in time"
+  },
+  {
+    "objectID": "index.html#outtakes-bloopers-and-in-between-things",
+    "href": "index.html#outtakes-bloopers-and-in-between-things",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Outtakes, bloopers, and in-between things",
+    "text": "Outtakes, bloopers, and in-between things\n\n\nAuthors should be able to:\n\n\nQuickly share incomplete thoughts (with errors in code!)\nTime travel to different versions (with output!)\nStash bits of code out of sight (with utilidors!)\nAnnotate easily what to look at and what not to look at 🚥\n\n\n\n\n\n\n\n“We’re on the brink of adventure, children. Don’t spoil it with questions.”\n– Mary Poppins"
+  },
+  {
+    "objectID": "index.html#i-think-notebooks-are-useful",
+    "href": "index.html#i-think-notebooks-are-useful",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "I think notebooks are useful",
+    "text": "I think notebooks are useful\n\n\nDon’t touch that\nit’s my emotional support notebook\n\n\n\nUseful to record my code + thought process\nUseful to get feedback from others\nUseful to get help getting unstuck\nUseful to help others get unstuck\nUseful to teach with\nUseful to learn with\nUseful to collaborate with\nUseful to publish work for my career\nUseful to debug with (see reprex)\nUseful to iterate on code with"
+  },
+  {
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Summary",
+    "text": "Summary\nNotebook users should be able to follow all four of these key principles with tools we make for them:\n\nSuspended reality — use utilidors to save their sanity and their code\n\n\n\nMultisensory experience — use navigation and organization to make notebooks smell better to everyone\n\n\n\n\nDetails matter — “Easy things should be easy, and hard things should be possible” (Larry Wall)\n\n\n\n\nMake it shareable — especially things that don’t work and things that aren’t done\n\n\n\n\n🧵 twitter thread"
+  },
+  {
+    "objectID": "index.html#thank-you",
+    "href": "index.html#thank-you",
+    "title": "The Happiest Notebooks on Earth",
+    "section": "Thank you!",
+    "text": "Thank you!\n\nWhat questions do you have?\n @apreshill\n @apreshill\n apreshill.com"
+  }
+]

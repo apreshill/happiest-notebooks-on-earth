@@ -1,0 +1,8 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  site-url: "https://apreshill.github.io/happiest-notebooks-on-earth/"
+  twitter-card:
+    image: "/img/preview.png"
