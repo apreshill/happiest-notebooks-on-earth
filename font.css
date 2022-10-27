@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Mouse';
+    src: local(''),
+       url("assets/startedbyamouse.woff2") format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url("assets/startedbyamouse.woff") format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-weight: normal;
+    font-style: normal;
+}
