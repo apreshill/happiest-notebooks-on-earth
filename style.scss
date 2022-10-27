@@ -1,0 +1,66 @@
+/*-- fonts --*/
+
+/* started by a mouse */
+@font-face {
+  font-family: 'Mouse';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/font/startedbyamouse.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/font/startedbyamouse.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/*-- scss:defaults --*/
+// Override theme settings (see ../template/settings.scss)
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+// Background of the presentation 
+$backgroundColor: #f8f1e7ff; // #fcfbf9;
+
+// Primary/body text
+$mainFont: 'Source Serif Pro', serif;
+$mainFontSize: 30px;
+$mainColor: #333;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$presentation-heading-font: 'Source Serif Pro', serif;
+$presentation-heading-color: black;
+$presentation-heading-font-weight: 700;
+$presentation-title-slide-text-align: center;
+$presentation-h1-font-size: 6em;
+$presentation-h2-font-size: 2em;
+
+// Links and actions
+$linkColor: #437597;
+$linkColorHover: darken( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+#title-slide .author {
+  color: white;
+}
+
+#title-slide h1 {
+  color: #393E8F;
+}
+
+#title-slide {
+  top: 0 !important;
+}
+
+#title-slide > .title {
+  font-family: 'Mouse', Impact, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}

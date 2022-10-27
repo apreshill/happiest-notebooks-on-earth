@@ -1,0 +1,555 @@
+---
+title: "The Happiest Notebooks on Earth"
+role: Director of Knowledge
+institute: Voltron Data
+format: 
+  revealjs:
+    multiplex: true
+    footer: "[apreshill.github.io/happiest-notebooks-on-earth/](https://apreshill.github.io/happiest-notebooks-on-earth/)"
+    theme: ["style.scss"]
+    slide-number: c/t
+    incremental: true
+    title-slide-attributes:
+      data-background-image: img/kingdom.jpg
+      data-background-size: cover  
+editor: visual
+---
+
+::: r-fit-text
+Hello.
+:::
+
+::: {style="text-align: center;"}
+## Alison Hill
+
+![](img/mint_disney.jpg){.nostretch style="border-radius: 50%;" width="200px"}
+
+### `r rmarkdown::metadata$role`
+
+### `r rmarkdown::metadata$institute`
+
+[`r fontawesome::fa("github")` \@apreshill](https://github.com/apreshill)\
+[`r fontawesome::fa("twitter")` \@apreshill](https://twitter.com/apreshill)\
+[`r fontawesome::fa("link")` apreshill.com](https://www.apreshill.com)
+:::
+
+## Once upon a time...
+
+::: columns
+::: {.column width="60%"}
+There was a human named Joel Grus (`@joelgrus`), who did not like notebooks.
+:::
+
+::: {.column width="40%"}
+![](img/i-dont-like-notebooks.jpeg){fig-align="center"}
+:::
+:::
+
+### 
+
+::: aside
+📹 <https://www.youtube.com/watch?v=7jiPeIFXb6U>
+:::
+
+## Select complaints
+
+::: columns
+::: {.column width="50%"}
+1.  Hidden state and out-of-order execution
+2.  Notebooks are difficult for beginners
+3.  Notebooks encourage bad habits
+4.  Notebooks discourage modularity and testing
+5.  Jupyter's autocomplete, linting, and way of looking up the help are awkward
+:::
+
+::: {.column width="50%"}
+6.  Notebooks encourage bad processes
+7.  Notebooks hinder reproducible + extensible science
+8.  Notebooks make it hard to copy and paste into Slack/Github issues
+9.  Errors will always halt execution
+10. Notebooks make it easy to teach poorly
+11. Notebooks make it hard to teach well
+:::
+:::
+
+::: aside
+🔗 <https://yihui.org/en/2018/09/notebook-war/>
+:::
+
+## In a land far far away...
+
+::: columns
+::: {.column width="60%"}
+There was another human named Jeremy Howard (`@jeremyphoward`), who actually did like notebooks. And shared about a notebook
+:::
+
+::: {.column width="40%"}
+![](img/i-like-notebooks.jpeg){fig-align="center"}
+:::
+:::
+
+### 
+
+::: aside
+📹 <https://www.youtube.com/watch?v=9Q6sLbz37gk>
+:::
+
+## Meanwhile 🍿... {background-color="#b5efdd"}
+
+::: columns
+::: {.column width="50%"}
+A fair post-ac data scientist turned product manager was knitting notebooks to her heart's desire
+
+![](img/mint_disney.jpg){fig-align="center" width="50%"}
+:::
+
+::: {.column width="50%"}
+![](img/my-nbs.png){fig-alt="Github search showing 607 notebook results user:apreshill extension:.Rmd extension:.qmd extension:.Rmarkdown" fig-align="center"}
+:::
+:::
+
+:::aside
+
+Illustration by [Desirée De Leon](https://desiree.rbind.io/)
+
+:::
+
+## The problem
+
+We are still just talking about tools and features.
+
+And...we are still (mainly) talking with engineers.
+
+## Imagineers {background-image="img/imagineers.jpeg" background-size="cover" background-opacity=".25"}
+
+A creative team of artists and engineers who design the theme parks
+
+::: columns
+::: {.column width="60%"}
+::: {.column width="40%"}
+:::
+
+*"We keep moving forward, opening up new doors and doing new things, because we're curious. And curiosity keeps leading us down new paths. We're always exploring and experimenting. We call Imagineering the blending of creative imagination with technical know-how."*\
+--- Walt Disney
+:::
+:::
+
+::: aside
+Photo © [Disney](https://www.yesterland.com/disneylandparis.html)
+:::
+
+## I think notebooks are useful
+
+1.  Useful to record my code + thought process
+
+2.  Useful to get feedback from others
+
+3.  Useful to get help getting unstuck
+
+4.  Useful to help others get unstuck
+
+5.  Useful to teach with
+
+6.  Useful to learn with
+
+7.  Useful to collaborate with
+
+8.  Useful to publish work for my career
+
+9.  Useful to debug with (see [reprex](https://reprex.tidyverse.org/))
+
+10. Useful to iterate on code with
+
+## What is a notebook?
+
+::: columns
+::: {.column width="50%"}
+[Mike Bostock](https://observablehq.com/@observablehq/introduction-to-notebooks):\
+
+> "an interactive, editable **document** defined by code. It's a computer program, but one that's designed to be easier to read and write by humans."
+:::
+
+::: {.column width="50%"}
+[Martin Fowler](https://martinfowler.com/bliki/ComputationalNotebook.html):\
+
+> "A computational notebook is an **environment** for writing a prose document that allows the author to embed code which can be easily executed with the results also incorporated into the document."
+:::
+:::
+
+## One kind of notebook
+
+```` markdown
+---
+title: "ggplot2 demo"
+author: "Norah Jones"
+date: "5/22/2021"
+format: 
+  html:
+    fig-width: 8
+    fig-height: 4
+    code-fold: true
+---
+
+## Air Quality
+
+@fig-airquality further explores the impact of temperature on ozone level.
+
+```{{r}}
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level.
+#| warning: false
+library(ggplot2)
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point() + 
+  geom_smooth(method = "loess"
+)
+```
+````
+
+## Why make a notebook?
+
+1.  For communicating to decision makers, who want to focus on the conclusions, not the code behind the analysis.
+
+2.  For collaborating with other data scientists (including future you!), who are interested in both your conclusions, and how you reached them (i.e. the code).
+
+3.  As an environment in which to *do* data science, as a modern day lab notebook where you can capture not only what you did, but also what you were thinking.
+
+::: aside
+🔗 <https://r4ds.hadley.nz/quarto.html>
+:::
+
+## Making of a notebook
+
+::: columns
+::: {.column width="40%"}
+[![](img/cinderella-dress.png){fig-alt="Mice and birds sing while making the dress for Cinderella to attend the royal ball" fig-align="center"}](https://disney.fandom.com/wiki/Cinderella's_Dress)
+:::
+
+::: {.column .smaller width="60%"}
+-   **Authoring framework:** how you write `code` + text (Jupyter, Quarto, Observable)
+
+-   **Language engine & markdown flavor:** what you write
+
+-   **File format:** what you save
+
+-   **Local editor:** where you write locally 💻 (source + UI)
+
+-   **Platform editor:** where the magic happens ☁️ (sharing + UI)
+:::
+:::
+
+##  {background-image="img/01-nb-tbl.jpg" background-size="contain"}
+
+##  {background-image="img/02-nb-tbl.jpg" background-size="contain"}
+
+##  {background-image="img/03-nb-tbl.jpg" background-size="contain"}
+
+##  {background-image="img/04-nb-tbl.jpg" background-size="contain"}
+
+## A notebook by any other name...
+
+::: columns
+::: {.column width="50%"}
+1.  Jupyter notebooks are notebooks. [Jupyter](https://jupyter.org/) is the product.
+2.  Observable notebooks are notebooks. [Observable](https://observablehq.com/) is the product.
+3.  [Quarto](https://quarto.org/) and [R Markdown](https://pkgs.rstudio.com/rmarkdown/) notebooks are plain text documents. Two modes:
+    -   Notebook mode
+
+    -   Batch mode
+:::
+
+::: {.column width="50%"}
+[![](img/rose.jpg){fig-alt="An enchanted rose trapped inside a glass jar" fig-align="center" width="50%"}](https://www.smithsonianmag.com/smithsonian-institution/when-a-red-rose-isnt-enchanted-how-long-can-it-last-180962451/)
+:::
+:::
+
+## Four key principles {background-image="img/wave.jpg" background-size="cover" background-opacity=".25"}
+
+1.  *Suspended reality*
+
+. . .
+
+2.  *Multisensory experience*
+
+. . .
+
+3.  *Details matter*
+
+. . .
+
+4.  *Make it shareable*
+
+::: aside
+🧵 [twitter thread](https://twitter.com/SahilBloom/status/1447181339535478790?s=20&t=PGjA1YwIxZvfvD38aRtOng)
+:::
+
+##  {background-color="#000"}
+
+::: r-fit-text
+Principle #1
+:::
+
+::: r-fit-text
+*Suspended reality*
+:::
+
+## Principle #1: Suspended reality
+
+::: columns
+::: {.column width="50%"}
+**Problem:** Walt Disney found it jarring to see characters out of place. It breaks the suspension of reality.
+
+**Solution:** Disney built the **utilidor** system --- a system of some of the world's largest utility tunnels
+
+*An intricate web of tunnels lies underneath the park, enabling characters to navigate to their respective "worlds" without ever appearing out of world or duplicative.*
+:::
+
+::: {.column width="50%"}
+![](img/mickey-in-disney-utilidors.jpeg){fig-alt="Mickey Mouse walking underground in the Disney utilidors"}
+:::
+:::
+
+## Notebook utilidors 
+
+::: columns
+::: {.column width="50%"}
+*Less magic, more plain text logic*
+
+1.  Let them use markdown
+2.  Configuration settings - often YAML in the document header or an external file - preferably define own [variables](https://quarto.org/docs/authoring/variables.html)
+3.  [Outsource a script or document](https://bookdown.org/yihui/rmarkdown-cookbook/child-document.html)
+4.  [Reuse code chunks in different places](https://bookdown.org/yihui/rmarkdown-cookbook/reuse-chunks.html)
+5.  Allow for conditional evaluation of code
+:::
+
+::: {.column width="50%"}
+![](img/fantasia.jpg){fig-align="center"}
+
+[An example](https://github.com/allisonhorst/penguins_paper_distill/blob/main/rjarticle/penguins.Rmd)
+:::
+:::
+
+::: aside
+Still from *Fantasia* (1940), © Walt Disney / Courtesy Everett Collection
+:::
+
+##  {background-color="#000"}
+
+::: r-fit-text
+Principle #2
+:::
+
+::: r-fit-text
+*Multisensory experience*
+:::
+
+## Principle #2: Multisensory experience
+
+::: columns
+::: {.column width="50%"}
+**Problem:** Being at Disney World needs to be an immersive, memorable experience.
+
+**Solution:** Disney built the **smellitizer** system --- a system that blows air across scented substances to make the air smell a certain (ideally good) way.
+:::
+
+::: {.column width="50%"}
+![](img/smellitizer.jpg){fig-alt="Smellitizers in Disney World waft scents around the park in key strategic areas" fig-align="center" width="75%"}
+:::
+:::
+
+## Notebook smells
+
+::: columns
+::: {.column width="50%"}
+Have you ever seen a notebook with...
+
+1.  No meaningful headings (or worse, cute or peppy ones)
+2.  No meaningful heading hierarchy
+3.  No navigation
+4.  No description of the data
+5.  No logical order
+:::
+
+::: {.column width="50%"}
+![](https://media.giphy.com/media/mPytjcsG3XS4o/giphy.gif)
+:::
+:::
+
+## Notebooks *do* have a scent
+
+::: columns
+::: {.column width="50%"}
+*"Information foraging explains how users behave on the web and why they click certain links and not others.\
+\
+Information scent can be used to analyze how people assess a link and the page context surrounding the link to judge what's on the other end of the link."*
+:::
+
+::: {.column width="50%"}
+![](img/stinky-minnie.jpeg)
+:::
+:::
+
+::: aside
+<https://www.nngroup.com/articles/information-scent/>
+:::
+
+## Smells like a good notebook 🥞
+
+::: columns
+::: {.column width="50%"}
+1.  Add a clickable table of contents 📌
+2.  [Add useful headings](https://www.plainlanguage.gov/guidelines/organize/add-useful-headings/)
+    -   Aim for H2 and H3 levels only
+    -   [Use sentence case](https://readabilityguidelines.co.uk/grammar-points/capital-letters/#2-use-sentence-case-in-headlines-and-subheads)
+3.  Limit to five or six H2 sections max if you can
+4.  [Have a topic sentence](https://www.plainlanguage.gov/guidelines/organize/have-a-topic-sentence/)
+5.  Describe your data (5w+1H)
+6.  Lay things out in a logical order
+    -   Beginning \> middle \> end
+    -   Logical != chronological
+:::
+
+::: {.column width="50%"}
+![](img/follow_your_nose.png){fig-align="center"}
+:::
+:::
+
+##  {background-color="#000"}
+
+::: r-fit-text
+Principle #3
+:::
+
+::: r-fit-text
+*Details matter*
+:::
+
+## Principle #3: Details matter
+
+::: columns
+::: {.column width="50%"}
+**Problem:** When a single detail is wrong, you lose the experience and the magic.
+
+**Solution:** Reduce the chances of losing the magic.
+
+**Examples:**\
+\
+1. You cannot buy gum
+
+2\. Official no-fly zone
+
+3\. Always within 30 steps of a trash can
+:::
+
+::: {.column width="50%"}
+![](img/image-from-rawpixel-id-5906603-jpeg.jpg)
+:::
+:::
+
+## Easy things should be easy
+
+::: columns
+::: {.column width="50%"}
+1.  Easy styling
+    -   People want fonts & colors!
+2.  Easy layouts
+    -   Basic grid with rows/columns
+3.  Easy show/hide code and results in output
+4.  Easy "run from the top" mode
+5.  Easy way to skip or [freeze](https://quarto.org/docs/projects/code-execution.html#freeze) a code chunk
+:::
+
+::: {.column width="50%"}
+![](img/cats-piano.png){fig-align="center"}
+:::
+:::
+
+## Hard things should be possible
+
+::: columns
+::: {.column width="50%"}
+1.  Version control
+2.  Export/download source file
+3.  Save all plots as image files
+4.  Extract all code into a script
+5.  [Reproducible environments](https://quarto.org/docs/projects/virtual-environments.html)
+:::
+
+::: {.column width="50%"}
+![](img/figaro.jpeg){fig-align="center"}
+:::
+:::
+
+##  {background-color="#000"}
+
+::: r-fit-text
+Principle #4
+:::
+
+::: r-fit-text
+*Make it shareable*
+:::
+
+## Principle #4: Make it shareable
+
+::: columns
+::: {.column width="50%"}
+![](img/sidewalk.jpg){fig-alt="Red concrete sidewalks at Disney World"}
+:::
+
+::: {.column width="50%"}
+**Problem:** Making something shareable makes it more memorable.
+
+**Solution:** Make it easier to share.
+
+**Examples:**
+
+*"The concrete---a brainchild of Disney and Kodak---creates more vivid photographs...and also makes the green grass appear greener."*
+
+*"\[Cinderella's\] castle faces south, meaning the sun is never directly behind it. It's (almost) impossible to take a bad photo of yourself in front of Cinderella's Castle."*
+:::
+:::
+
+What does this mean? Make it easier for me to get a link, make it easier for me
+
+link
+
+facade
+
+hide my gnarly code (with utilidoors)
+
+junk drawer for my code that doesn't work
+
+## Summary {background-image="img/wave.jpg" background-size="cover" background-opacity=".25"}
+
+Notebook users should be able to follow all four of these key principles with tools we make for them:
+
+1.  *Suspended reality* --- provide utilidors to save their sanity and their code
+
+. . .
+
+2.  *Multisensory experience* --- provide navigation and organization to make notebooks smell better to everyone
+
+. . .
+
+3.  *Details matter ---* \"Easy things should be easy, and hard things should be possible." (Larry Wall)
+
+. . .
+
+4.  *Make it shareable*
+
+::: aside
+🧵 [twitter thread](https://twitter.com/SahilBloom/status/1447181339535478790?s=20&t=PGjA1YwIxZvfvD38aRtOng)
+:::
+
+::: {style="text-align: right;"}
+## Thank you!
+
+![](img/mint_disney.jpg){.nostretch style="border-radius: 50%;" width="200px"}
+
+### What questions do you have?
+
+[`r fontawesome::fa("github")` \@apreshill](https://github.com/apreshill)\
+[`r fontawesome::fa("twitter")` \@apreshill](https://twitter.com/apreshill)\
+[`r fontawesome::fa("link")` apreshill.com](https://www.apreshill.com)
+:::
