@@ -5,4 +5,4 @@ project:
 website:
   site-url: "https://apreshill.github.io/happiest-notebooks-on-earth/"
   twitter-card:
-    image: "/img/preview.png"
+    image: "img/preview.png"
