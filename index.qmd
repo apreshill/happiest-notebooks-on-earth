@@ -4,7 +4,6 @@ role: Director of Knowledge
 institute: Voltron Data
 format: 
   revealjs:
-    embed-resources: true
     multiplex: true
     footer: "[apreshill.github.io/happiest-notebooks-on-earth/](https://apreshill.github.io/happiest-notebooks-on-earth/)"
     theme: ["style.scss"]
