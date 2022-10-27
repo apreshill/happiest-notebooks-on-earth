@@ -6,3 +6,6 @@ website:
   site-url: "https://apreshill.github.io/happiest-notebooks-on-earth/"
   twitter-card:
     image: "img/preview.png"
+    card-style: summary_large_image
+    description: "All notebooks are useful, but happy notebooks are harder to find."
+  
