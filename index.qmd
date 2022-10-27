@@ -461,7 +461,8 @@ Principle #3
 ::: columns
 ::: {.column width="50%"}
 1.  Easy styling
-    -   People want fonts & colors!
+    -   Authors want fonts & colors!
+    -   Readers want fonts & colors!
 2.  Easy layouts
     -   Basic grid with rows/columns
 3.  Easy show/hide code and results in output
@@ -481,7 +482,7 @@ Principle #3
 1.  Version control
 2.  Export/download source file
 3.  Save all plots as image files
-4.  Extract all code into a script
+4.  Extract all of my code into a script
 5.  [Reproducible environments](https://quarto.org/docs/projects/virtual-environments.html)
 :::
 
@@ -520,15 +521,40 @@ Principle #4
 :::
 :::
 
-What does this mean? Make it easier for me to get a link, make it easier for me
+## A notebook is a snapshot in time
 
-link
+::: columns
+::: {.column width="50%"}
+![](img/photo.jpeg)
+:::
 
-facade
+::: {.column width="50%"}
+![](img/nb-snapshot.png){fig-align="center"}
+:::
+:::
 
-hide my gnarly code (with utilidoors)
+## Outtakes, bloopers, and in-between things
 
-junk drawer for my code that doesn't work
+::: columns
+::: {.column width="50%"}
+Authors should be able to:\
+
+1.  Quickly share incomplete thoughts (with errors in code!)
+
+2.  Time travel to different versions (with output!)
+
+3.  Stash bits of code out of sight (with utilidoors!)
+
+4.  Annotate easily what to look at and what not to look at 🚥
+:::
+
+::: {.column width="50%"}
+![](img/marry-poppins-banks-kids.jpeg){fig-align="center"}
+
+*"We're on the brink of adventure, children. Don't spoil it with questions."*\
+-- Mary Poppins
+:::
+:::
 
 ## Summary {background-image="img/wave.jpg" background-size="cover" background-opacity=".25"}
 
@@ -542,11 +568,11 @@ Notebook users should be able to follow all four of these key principles with to
 
 . . .
 
-3.  *Details matter ---* "Easy things should be easy, and hard things should be possible." (Larry Wall)
+3.  *Details matter* --- "Easy things should be easy, and hard things should be possible" (Larry Wall)
 
 . . .
 
-4.  *Make it shareable*
+4.  *Make it shareable* --- especially things that don't work and things that aren't done
 
 ::: aside
 🧵 [twitter thread](https://twitter.com/SahilBloom/status/1447181339535478790?s=20&t=PGjA1YwIxZvfvD38aRtOng)
