@@ -7,7 +7,7 @@ format:
   revealjs:
     resources: img/preview.png
     multiplex: true
-    footer: "[apreshill.github.io/happiest-notebooks-on-earth/](https://apreshill.github.io/happiest-notebooks-on-earth/)"
+    footer: "[www.apreshill.com/talk/2022-canssi-happiest-nb/](https://www.apreshill.com/talk/2022-canssi-happiest-nb/)"
     theme: ["style.scss"]
     css: font.css
     slide-number: c/t
@@ -36,6 +36,17 @@ Hello.
 [`r fontawesome::fa("mastodon")` fosstodon.org/\@apreshill](https://fosstodon.org/@apreshill)\
 [`r fontawesome::fa("link")` apreshill.com](https://www.apreshill.com)
 :::
+
+## Link to talk
+
+```{r}
+#| include: false
+library(qrcode)
+url <- qr_code("https://www.apreshill.com/talk/2022-canssi-happiest-nb/")
+generate_svg(url, filename = "img/qr.svg")
+```
+
+![](img/qr.svg){fig-align="center"}
 
 ## Once upon a time...
 
