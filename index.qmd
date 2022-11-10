@@ -5,6 +5,7 @@ institute: Voltron Data
 embed-resources: true
 format: 
   revealjs:
+    resources: img/
     multiplex: true
     footer: "[apreshill.github.io/happiest-notebooks-on-earth/](https://apreshill.github.io/happiest-notebooks-on-earth/)"
     theme: ["style.scss"]
