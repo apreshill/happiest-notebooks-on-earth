@@ -33,6 +33,7 @@ Hello.
 
 [`r fontawesome::fa("github")` \@apreshill](https://github.com/apreshill)\
 [`r fontawesome::fa("twitter")` \@apreshill](https://twitter.com/apreshill)\
+[`r fontawesome::fa("mastodon")` fosstodon.org/\@apreshill](https://fosstodon.org/@apreshill)\
 [`r fontawesome::fa("link")` apreshill.com](https://www.apreshill.com)
 :::
 
@@ -589,5 +590,6 @@ Notebook users should be able to follow all four of these key principles with to
 
 [`r fontawesome::fa("github")` \@apreshill](https://github.com/apreshill)\
 [`r fontawesome::fa("twitter")` \@apreshill](https://twitter.com/apreshill)\
+[`r fontawesome::fa("mastodon")` fosstodon.org/\@apreshill](https://fosstodon.org/@apreshill)\
 [`r fontawesome::fa("link")` apreshill.com](https://www.apreshill.com)
 :::
