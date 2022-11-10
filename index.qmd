@@ -592,6 +592,42 @@ Notebook users should be able to follow all four of these key principles with to
 🧵 [twitter thread](https://twitter.com/SahilBloom/status/1447181339535478790?s=20&t=PGjA1YwIxZvfvD38aRtOng)
 :::
 
+
+---
+
+## Sincere thanks to
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- Tom Mock
+
+- Allison Horst
+
+- Rich Iannone
+
+- JJ Allaire
+
+- Charles Teague
+
+- Observable Insight 2022 conference organizers
+
+- AGU Notebooks Now! Initiative and support from the Sloan Foundation
+
+- CANSSI and Rohan Alexander for this opportunity
+:::
+
+::: {.column width="50%"}
+![](https://media.giphy.com/media/hmDKEVDxaWn2U/giphy.gif)
+:::
+
+::::
+
+
+
+---
+
 ::: {style="text-align: right;"}
 ## Thank you!
 
@@ -604,3 +640,4 @@ Notebook users should be able to follow all four of these key principles with to
 [`r fontawesome::fa("mastodon")` fosstodon.org/\@apreshill](https://fosstodon.org/@apreshill)\
 [`r fontawesome::fa("link")` apreshill.com](https://www.apreshill.com)
 :::
+
